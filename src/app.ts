@@ -240,7 +240,7 @@ class ProjectList extends Component<HTMLDivElement, HTMLElement> {
       // const listItem = document.createElement('li');
       // listItem.textContent = prjItem.title;
       // listEl.appendChild(listItem);
-      new ProjectItem(this.element.id, prjItem);
+      new ProjectItem(this.element.querySelector('ul')!.id, prjItem);
     }
   }
 
